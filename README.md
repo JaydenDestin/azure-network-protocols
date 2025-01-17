@@ -72,6 +72,7 @@ In wireshark, Filter for DNS traffic only and NSLookup everyones favorite place 
 
                                     OBSERVE RDP TRAFFIC
 ![IMG_9798](https://github.com/user-attachments/assets/165cee2b-d928-42fc-b01d-03f67a169947)
+
 On wireshark, filter for tcp.port==3389 and observe the immediate non stop stream of traffic.
 
 
