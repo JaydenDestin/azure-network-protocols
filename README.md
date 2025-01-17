@@ -27,21 +27,32 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
-[IMG_9788](https://github.com/user-attachments/assets/3d0c02b4-7dad-47c7-b610-4156c3025ea8)
+                                
+                                    LETS OBSERVE ICMP TRAFFIC:
+![image](https://github.com/user-attachments/assets/068d3c13-2d6d-4753-a03d-b57c2c645d4c)
+
+
 
 
 
 </p>
 <p>
- .
+  Remote into your windows 10 VM and install wireshark, and then attempt to ping the UBUNTU VM (DONT FORGET THE LINUXs PRIVATE IP ADDRESS AND TO FILTER FOR ICMP TRAFFIC ONLY) Now observe ping requests and replies within wireshark.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+                 INITIATE,DISABLE, AND THEN RE ENABLE NON STOP PING FROM WINDOWS 10 TO UBUNTU VM:
+  ![Screenshot 2025-01-14 150658](https://github.com/user-attachments/assets/f7ccd6d1-9637-43c2-9bec-f5265e37bec8)
+![image](https://github.com/user-attachments/assets/a4c86178-220a-4cfb-8e38-6f401d7c7889)
+![image](https://github.com/user-attachments/assets/5c5dd7e6-ebf8-406a-b432-0d2f2db3b327)
+
+
+  
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Back on the azure portal open the NSG that Ubuntu VM is using and disable the incoming traffic. Observe the ICMP traffic in wireshark then Re enable traffic for group, and stop the ping activity.  
 </p>
 <br />
 
@@ -52,3 +63,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Initiated an non stop ping to Ubuntu VM (linux-vm) from within Windows 10 VM, observed ping requests and then.
 </p>
 <br />
+
+
+
+
