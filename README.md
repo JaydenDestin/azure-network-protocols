@@ -1,7 +1,7 @@
 
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+In this overview, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
 
 
@@ -57,13 +57,25 @@ Back on the azure portal open the NSG that Ubuntu VM is using and disable the in
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Initiated an non stop ping to Ubuntu VM (linux-vm) from within Windows 10 VM, observed ping requests and then.
-</p>
-<br />
+
+                                       OBSERVE SSH TRAFFIC
+                                        
+![IMG_9794](https://github.com/user-attachments/assets/ea72c396-f237-4cd2-8b25-2db204bfd3d8)
+
+In wireshark, filter traffic to SSH only and type random commands into the linux SSH connection and watch the spam traffic in wireshark.
 
 
 
+                                     OBSERVE DNS TRAFFIC
+![image](https://github.com/user-attachments/assets/725b15e5-8dbd-4b3e-8394-d4fea5bd9b73)
+In wireshark, Filter for DNS traffic only and NSLookup everyones favorite place disney and observe their IP address and observe DNS traffic.
+
+                                    OBSERVE RDP TRAFFIC
+![IMG_9798](https://github.com/user-attachments/assets/165cee2b-d928-42fc-b01d-03f67a169947)
+On wireshark, filter for tcp.port==3389 and observe the immediate non stop stream of traffic.
+
+
+
+
+                                    
 
